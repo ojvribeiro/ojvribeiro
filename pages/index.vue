@@ -18,9 +18,9 @@
               <div
                 class="ping relative rounded-full overflow-hidden aspect-square w-[100px] md:w-[200px] xl:w-[300px] ring-4"
               >
-                <img
+                <Image
                   src="/assets/img/avatar/me.jpg"
-                  alt=""
+                  alt="Victor Ribeiro @ojvribeiro"
                   class="w-full object-cover"
                 />
               </div>
