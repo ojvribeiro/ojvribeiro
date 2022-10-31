@@ -22,6 +22,8 @@
                   src="/assets/img/avatar/me.jpg"
                   alt="Victor Ribeiro @ojvribeiro"
                   class="w-full object-cover"
+                  width="300"
+                  height="300"
                 />
               </div>
             </div>
