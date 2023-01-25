@@ -70,15 +70,26 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inconsolata&family=Poppins:wght@400;700;800&display=swap');
 
-  html, body {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  html,
+  body {
     font-family: 'DM Sans', sans-serif;
   }
 
-  pre, code {
+  pre,
+  code {
     font-family: 'Inconsolata', monospace;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply text-3xl md:text-4xl xl:text-5xl font-black;
 
     font-family: 'Poppins', sans-serif;
