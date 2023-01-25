@@ -16,19 +16,19 @@
   const langs = [
     {
       name: 'JavaScript',
-      icon: 'mdi:language-javascript',
+      icon: 'skill-icons:javascript',
     },
     {
       name: 'Vue',
-      icon: 'bxl:vuejs',
+      icon: 'vscode-icons:file-type-vue',
     },
     {
       name: 'Nuxt',
-      icon: 'simple-icons:nuxtdotjs',
+      icon: 'vscode-icons:file-type-nuxt',
     },
     {
       name: 'Sass',
-      icon: 'ion:logo-sass',
+      icon: 'vscode-icons:file-type-sass',
     },
     {
       name: 'WordPress',
@@ -40,11 +40,11 @@
     },
     {
       name: 'Tailwind',
-      icon: 'bxl:tailwind-css',
+      icon: 'vscode-icons:file-type-tailwind',
     },
     {
       name: 'React',
-      icon: 'ri:reactjs-fill',
+      icon: 'vscode-icons:file-type-reactjs',
     },
   ]
 </script>
