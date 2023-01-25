@@ -54,12 +54,13 @@
 
   .orbit {
     position: absolute;
-    width: 200%;
+    width: 220%;
     aspect-ratio: 1;
     top: 50%;
     left: 50%;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+    //scale: 0.9;
     box-sizing: border-box;
     z-index: 1;
 
@@ -70,10 +71,12 @@
       animation-iteration-count: infinite;
       animation-duration: $time;
       animation-timing-function: linear;
+      border-radius: 50%;
 
       &:hover {
         .orbit-item {
           scale: 1.2;
+          background-color: rgba(#fff, 10%);
         }
       }
 
@@ -81,7 +84,7 @@
         position: absolute;
         top: calc(50% - 20px);
         left: calc(50% - 20px);
-        background-color: rgba(#fff, 10%);
+        background-color: rgba(#fff, 0%);
         width: 40px;
         aspect-ratio: 1;
         border-radius: 50%;
@@ -89,10 +92,10 @@
         justify-content: center;
         align-items: center;
         transform-origin: center center;
-        opacity: 0.4;
+        opacity: 0.6;
         transition: 0.2s cubic-bezier(0.52, 0, 0.38, 2.12);
 
-        @media (min-width: 768px) {
+        @media (min-width: 1028px) {
           width: 70px;
           top: calc(50% - 35px);
           left: calc(50% - 35px);
