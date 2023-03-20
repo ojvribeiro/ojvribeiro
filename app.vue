@@ -1,37 +1,5 @@
 <template>
   <Head>
-    <meta charset="utf-8" />
-
-    <meta
-      name="description"
-      content="Victor Ribeiro is a front-end web developer."
-    />
-    <meta name="author" content="Victor Ribeiro" />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ojvribeiro.vercel.app/" />
-    <meta property="og:title" content="Victor Ribeiro" />
-    <meta
-      property="og:description"
-      content="Victor Ribeiro is a front-end web developer."
-    />
-    <meta
-      property="og:image"
-      content="/assets/icons/favicon/favicon-200x200.png"
-    />
-
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://ojvribeiro.vercel.app/" />
-    <meta property="twitter:title" content="Victor Ribeiro" />
-    <meta
-      property="twitter:description"
-      content="Victor Ribeiro is a front-end web developer."
-    />
-    <meta
-      property="twitter:image"
-      content="/assets/icons/favicon/favicon-200x200.png"
-    />
-
     <link
       rel="apple-touch-icon"
       sizes="180x180"
