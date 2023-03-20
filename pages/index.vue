@@ -115,10 +115,6 @@
   </Layout>
 </template>
 
-<script setup>
-  import { Icon } from '@iconify/vue'
-</script>
-
 <style scoped lang="scss">
   .social-icons {
     @apply mt-8 flex gap-5 text-4xl;
