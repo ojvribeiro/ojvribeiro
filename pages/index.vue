@@ -40,7 +40,7 @@
               <div>
                 <p class="text-white text-lg">
                   Sou um desenvolvedor front-end que ama codar e ama mais ainda o
-                  JavaScript desde 2010. ❤️
+                  JavaScript desde 2010. <Icon icon="fluent-emoji-flat:red-heart" />
                 </p>
               </div>
 
