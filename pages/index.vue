@@ -3,7 +3,7 @@
     <title>Home</title>
   </Head>
 
-  <Layout>
+  <Layout name="default">
     <header
       class="h-screen bg-gradient-to-r from-brand-purple to-brand-green overflow-hidden"
     >
