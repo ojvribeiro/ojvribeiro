@@ -2,17 +2,14 @@
   "private": true,
   "name": "vulmix-app",
   "scripts": {
-    "dev": "mix watch --hot",
-    "prod": "mix --production",
-    "serve": "npx http-server -p 8000 -a localhost _dist --gzip --proxy http://localhost:8000?"
+    "dev": "tsc ./vulmix.config.ts --outDir ./.vulmix && mix watch --mix-config=.vulmix/laravel-mix/webpack.mix.js --hot",
+    "prod": "mix --mix-config=.vulmix/laravel-mix/webpack.mix.js --production",
+    "serve": "npm run prod && npx http-server -p 8000 -a localhost _dist --gzip --proxy http://localhost:8000?"
   },
   "dependencies": {
-    "vulmix": "0.6.0-beta.preview.3"
-  },
-  "devDependencies": {
-    "@iconify/vue": "^4.0.0",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.7",
+    "vulmix": "0.6.0-beta"
   }
 }
