@@ -84,6 +84,7 @@
         left: calc(50% - 20px);
         background-color: rgba(#fff, 0%);
         width: 40px;
+        height: 40px;
         aspect-ratio: 1;
         border-radius: 50%;
         display: flex;
@@ -95,6 +96,7 @@
 
         @media (min-width: 1028px) {
           width: 70px;
+          height: 70px;
           top: calc(50% - 35px);
           left: calc(50% - 35px);
         }
