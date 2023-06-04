@@ -1,6 +1,6 @@
-import { VulmixConfig } from "vulmix/types/vulmix-config";
+import { defineVulmixConfig } from './.vulmix/utils/defineVulmixConfig'
 
-module.exports = <VulmixConfig>{
+export default defineVulmixConfig({
   lang: 'pt-BR',
   head: {
     meta: [
@@ -79,7 +79,7 @@ module.exports = <VulmixConfig>{
     link: [
       {
         rel: 'apple-touch-icon',
-        sizes: '180x180',
+        sizes: '192x192',
         href: '/assets/icons/favicon/apple-touch-icon.png',
       },
 
@@ -103,4 +103,4 @@ module.exports = <VulmixConfig>{
       },
     ],
   },
-}
+})

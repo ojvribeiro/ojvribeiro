@@ -1,9 +1,9 @@
 <template>
-  <Head>
-    <title>Home</title>
-  </Head>
+  <Layout>
+    <Head>
+      <title>Home</title>
+    </Head>
 
-  <Layout name="default">
     <header
       class="h-screen bg-gradient-to-r from-brand-purple to-brand-green overflow-hidden"
     >
@@ -18,7 +18,7 @@
               <div
                 class="ping relative rounded-full overflow-hidden aspect-square w-[100px] lg:w-[200px] xl:w-[300px] ring-4 transition-transform"
               >
-                <Image
+                <img
                   src="/assets/img/avatar/me.jpg"
                   alt="Victor Ribeiro @ojvribeiro"
                   class="w-full object-cover"

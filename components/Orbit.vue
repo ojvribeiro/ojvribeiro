@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-  const langs = [
+  const langs = ref([
     {
       name: 'JavaScript',
       icon: 'skill-icons:javascript',
@@ -44,7 +44,7 @@
       name: 'React',
       icon: 'vscode-icons:file-type-reactjs',
     },
-  ]
+  ])
 </script>
 
 <style scoped lang="scss">
