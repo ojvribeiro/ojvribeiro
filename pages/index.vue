@@ -32,15 +32,18 @@
           <div class="col-span-2 lg:col-span-1 flex items-center">
             <div class="px-4 sm:px-8 md:px-16 space-y-6">
               <div>
-                <p class="font-sans text-white/50 font-semibold">Olá! Eu sou o</p>
+                <p class="font-sans text-white/50 font-semibold">
+                  Olá! Eu sou o
+                </p>
 
                 <h1 class="text-white text-4xl md:text-6xl">Victor Ribeiro</h1>
               </div>
 
               <div>
                 <p class="text-white text-lg">
-                  Sou um desenvolvedor front-end que ama codar e ama mais ainda o
-                  JavaScript desde 2010. <Icon icon="fluent-emoji-flat:red-heart" />
+                  Sou um desenvolvedor front-end que ama codar e ama mais ainda
+                  o JavaScript desde 2010.
+                  <Icon icon="fluent-emoji-flat:red-heart" />
                 </p>
               </div>
 
