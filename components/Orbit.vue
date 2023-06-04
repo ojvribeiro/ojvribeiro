@@ -1,9 +1,11 @@
 <template>
-  <div class="orbit">
-    <div class="orbit-wrapper">
+  <div
+    class="absolute w-[220%] aspect-square top-1/2 left-1/2 rounded-full -translate-x-1/2 -translate-y-1/2 box-border z-[1]"
+  >
+    <div class="orbit-wrapper w-full h-full rounded-full">
       <div class="orbit-item" :title="lang.name" v-for="lang in langs">
         <div class="orbit-item-content">
-          <Icon :icon="lang.icon" />
+          <Icon :icon="lang.icon" class="!block" />
         </div>
       </div>
     </div>
@@ -51,25 +53,11 @@
   $time: 40s;
 
   .orbit {
-    position: absolute;
-    width: 220%;
-    aspect-ratio: 1;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    //scale: 0.9;
-    box-sizing: border-box;
-    z-index: 1;
-
     &-wrapper {
-      width: 100%;
-      height: 100%;
       animation-name: orbit;
       animation-iteration-count: infinite;
       animation-duration: $time;
       animation-timing-function: linear;
-      border-radius: 50%;
 
       &:hover {
         .orbit-item {
@@ -93,6 +81,7 @@
         transform-origin: center center;
         opacity: 0.6;
         transition: 0.2s cubic-bezier(0.52, 0, 0.38, 2.12);
+        scale: 0.8;
 
         @media (min-width: 1028px) {
           width: 70px;
