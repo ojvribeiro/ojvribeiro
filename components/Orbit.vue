@@ -61,8 +61,8 @@
 
       &:hover {
         .orbit-item {
-          scale: 1.2;
-          background-color: rgba(#fff, 10%);
+          scale: 1;
+          opacity: 0.8;
         }
       }
 
@@ -88,6 +88,13 @@
           height: 70px;
           top: calc(50% - 35px);
           left: calc(50% - 35px);
+        }
+
+        @media (min-width: 1280px) {
+          width: 90px;
+          height: 90px;
+          top: calc(50% - 45px);
+          left: calc(50% - 45px);
         }
 
         &::after {
