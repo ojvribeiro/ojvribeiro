@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
   const langs = ref([
     {
       name: 'JavaScript',

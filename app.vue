@@ -26,7 +26,7 @@
   <App />
 </template>
 
-<script setup>
+<script setup lang="ts">
   import { useHead } from '@vueuse/head'
 
   useHead({
