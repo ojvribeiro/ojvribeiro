@@ -58,7 +58,7 @@
   h4,
   h5,
   h6 {
-    @apply text-3xl md:text-4xl xl:text-5xl font-black;
+    @apply font-black;
 
     font-family: 'Poppins', sans-serif;
   }
