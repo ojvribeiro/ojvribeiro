@@ -17,7 +17,12 @@ module.exports = {
             50: '#90dff7',
           },
         },
+      },
 
+      fontFamily: {
+        incosolata: ['Inconsolata', 'monospace'],
+        'dm-sans': ['DM Sans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
