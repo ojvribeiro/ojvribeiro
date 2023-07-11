@@ -1,8 +1,8 @@
 <template>
   <div
-    class="absolute w-[220%] aspect-square top-1/2 left-1/2 rounded-full -translate-x-1/2 -translate-y-1/2 box-border z-[1]"
+    class="absolute top-1/2 left-1/2 z-[1] box-border aspect-square w-[220%] -translate-x-1/2 -translate-y-1/2 rounded-full"
   >
-    <div class="orbit-wrapper w-full h-full rounded-full">
+    <div class="orbit-wrapper h-full w-full rounded-full">
       <div class="orbit-item" :title="lang.name" v-for="lang in langs">
         <div class="orbit-item-content">
           <Icon :icon="lang.icon" class="!block" />
