@@ -51,6 +51,10 @@
     font-family: 'DM Sans', sans-serif;
   }
 
+  body {
+    @apply bg-gradient-to-r from-brand-purple to-brand-green;
+  }
+
   pre,
   code {
     font-family: 'Inconsolata', monospace;
