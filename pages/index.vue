@@ -9,18 +9,18 @@
     </Head>
 
     <header
-      class="h-screen bg-gradient-to-r from-brand-purple to-brand-green overflow-hidden"
+      class="h-screen overflow-hidden bg-gradient-to-r from-brand-purple to-brand-green"
     >
       <Container class="h-full">
-        <div class="grid grid-cols-2 gap-8 h-full pt-10 lg:pt-0">
+        <div class="grid h-full grid-cols-2 gap-8 pt-10 lg:pt-0">
           <div
-            class="col-span-2 lg:col-span-1 flex items-center justify-center"
+            class="col-span-2 flex items-center justify-center lg:col-span-1"
           >
             <div class="relative">
               <Orbit />
 
               <div
-                class="ping relative rounded-full overflow-hidden aspect-square w-[100px] lg:w-[200px] xl:w-[300px] ring-4 transition-transform"
+                class="ping relative aspect-square w-[100px] overflow-hidden rounded-full ring-4 transition-transform lg:w-[200px] xl:w-[300px]"
               >
                 <img
                   :src="data?.avatar_url"
@@ -33,18 +33,18 @@
             </div>
           </div>
 
-          <div class="col-span-2 lg:col-span-1 flex items-center">
-            <div class="px-4 sm:px-8 md:px-16 space-y-6">
+          <div class="col-span-2 flex items-center lg:col-span-1">
+            <div class="space-y-6 px-4 sm:px-8 md:px-16">
               <div>
-                <p class="font-sans text-white/50 font-semibold">
+                <p class="font-sans font-semibold text-white/50">
                   Olá! Eu sou o
                 </p>
 
-                <h1 class="text-white text-4xl md:text-6xl">Victor Ribeiro</h1>
+                <h1 class="text-4xl text-white md:text-6xl">Victor Ribeiro</h1>
               </div>
 
               <div>
-                <p class="text-white text-lg">
+                <p class="text-lg text-white">
                   Sou um desenvolvedor front-end que ama codar e ama mais ainda
                   o JavaScript desde 2010.
                   <Icon icon="fluent-emoji-flat:red-heart" />
@@ -127,7 +127,7 @@
     @apply mt-8 flex gap-5 text-4xl;
 
     a {
-      @apply transition duration-200 text-blue-300 hover:text-white hover:scale-110;
+      @apply text-blue-300 transition duration-200 hover:scale-110 hover:text-white;
     }
   }
 </style>
