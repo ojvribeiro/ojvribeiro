@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  const { data } = useFetch('https://api.github.com/users/ojvribeiro')
+  const { data, pending } = useFetch('https://api.github.com/users/ojvribeiro')
 </script>
 
 <template>
@@ -22,7 +22,10 @@
               <div
                 class="ping relative aspect-square w-[100px] overflow-hidden rounded-full ring-4 transition-transform lg:w-[200px] xl:w-[300px]"
               >
+                <div v-if="pending" class="w-full h-full bg-white/10 animate-pulse"></div>
+
                 <img
+                  v-else
                   :src="data?.avatar_url"
                   alt="Victor Ribeiro @ojvribeiro"
                   class="w-full object-cover"
