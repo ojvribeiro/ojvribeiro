@@ -6216,10 +6216,10 @@ vue@^3.3.2:
     "@vue/server-renderer" "3.3.4"
     "@vue/shared" "3.3.4"
 
-vulmix@^0.6.1-beta.preview.33:
-  version "0.6.1-beta.preview.33"
-  resolved "https://registry.yarnpkg.com/vulmix/-/vulmix-0.6.1-beta.preview.33.tgz#79b8b3380d093ea50dae644415cf8c6b1c363ac9"
-  integrity sha512-bwXIZNn1NXSQ+1iJFmqHwTb0PGvqG3CRxJETQkFV+ysGqXY9jkyb/OOUq2EttasaOBvQnUw+yf0K67qZi0d/lQ==
+vulmix@^0.6.1-beta.preview.34:
+  version "0.6.1-beta.preview.34"
+  resolved "https://registry.yarnpkg.com/vulmix/-/vulmix-0.6.1-beta.preview.34.tgz#70bc7e9ea621157e1bbb86a1c3ba44d3e5656722"
+  integrity sha512-2j6DYV8O+pBEWklZkTU15eu6ue4Zx4IweEyxBqEq+0H4cXQee75uzEiAmYR+w5E3hwRucmMF3JsCXzzYd1zNyA==
   dependencies:
     "@iconify/vue" "^4.0.2"
     "@types/node" "^20.1.4"
