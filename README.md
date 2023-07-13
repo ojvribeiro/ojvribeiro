@@ -1,3 +1,3 @@
-[![v()](https://user-images.githubusercontent.com/8026741/166133592-d1dc1a71-01e4-435e-bf1f-339ceec385e1.svg)](https://klaver.me/victor)
+[![victor-ribeiro-logo](https://github.com/ojvribeiro/ojvribeiro/assets/8026741/f7705b21-8daf-473b-83a2-e0a1457040d9)](https://ojvribeiro.me)
 
 `Hi, I'm Victor! 👋`
