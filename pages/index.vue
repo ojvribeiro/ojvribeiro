@@ -1,3 +1,7 @@
+<script setup lang="ts">
+  const { data } = useFetch('https://api.github.com/users/ojvribeiro')
+</script>
+
 <template>
   <Layout>
     <Head>
@@ -19,7 +23,7 @@
                 class="ping relative rounded-full overflow-hidden aspect-square w-[100px] lg:w-[200px] xl:w-[300px] ring-4 transition-transform"
               >
                 <img
-                  src="/assets/img/avatar/me.jpg"
+                  :src="data?.avatar_url"
                   alt="Victor Ribeiro @ojvribeiro"
                   class="w-full object-cover"
                   width="300"
