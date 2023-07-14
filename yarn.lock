@@ -2877,9 +2877,9 @@ ejs@^3.1.7:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.431:
-  version "1.4.458"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.458.tgz#e171c03e6b15e44f6d27c0e1a27a3a3f828117c8"
-  integrity sha512-fYaH2f9dlJ/W3EV7wpRgzAoE85UwCUFeJIiL24PCRtvzdXJNy3AZdS/0zLqw5Omnp9GSR/hApMUQjacW2nfgsw==
+  version "1.4.459"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.459.tgz#25a23370f4ae8aaa8f77aaf00133aa4994f4148e"
+  integrity sha512-XXRS5NFv8nCrBL74Rm3qhJjA2VCsRFx0OjHKBMPI0otij56aun8UWiKTDABmd5/7GTR021pA4wivs+Ri6XCElg==
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -5838,9 +5838,9 @@ svgo@^2.7.0:
     stable "^0.1.8"
 
 tailwindcss@^3.2.7:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.3.2.tgz#2f9e35d715fdf0bbf674d90147a0684d7054a2d3"
-  integrity sha512-9jPkMiIBXvPc2KywkraqsUfbfj+dHDb+JPWtSJa9MLFdrPyazI7q6WX2sUrm7R9eVR7qqv3Pas7EvQFzxKnI6w==
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.3.3.tgz#90da807393a2859189e48e9e7000e6880a736daf"
+  integrity sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==
   dependencies:
     "@alloc/quick-lru" "^5.2.0"
     arg "^5.0.2"
@@ -5862,7 +5862,6 @@ tailwindcss@^3.2.7:
     postcss-load-config "^4.0.1"
     postcss-nested "^6.0.1"
     postcss-selector-parser "^6.0.11"
-    postcss-value-parser "^4.2.0"
     resolve "^1.22.2"
     sucrase "^3.32.0"
 
@@ -6216,10 +6215,10 @@ vue@^3.3.2:
     "@vue/server-renderer" "3.3.4"
     "@vue/shared" "3.3.4"
 
-vulmix@^0.6.1-beta.preview.34:
-  version "0.6.1-beta.preview.34"
-  resolved "https://registry.yarnpkg.com/vulmix/-/vulmix-0.6.1-beta.preview.34.tgz#70bc7e9ea621157e1bbb86a1c3ba44d3e5656722"
-  integrity sha512-2j6DYV8O+pBEWklZkTU15eu6ue4Zx4IweEyxBqEq+0H4cXQee75uzEiAmYR+w5E3hwRucmMF3JsCXzzYd1zNyA==
+vulmix@^0.6.1-beta.preview.35:
+  version "0.6.1-beta.preview.35"
+  resolved "https://registry.yarnpkg.com/vulmix/-/vulmix-0.6.1-beta.preview.35.tgz#6cd731793eae8285155e5328e73e18d702c0c2f9"
+  integrity sha512-XFq3y/HeQ+XBOYpZjhE2iW3vnXgHvjTVrprp3RyH7cpsvyaGHTifsFkV2dzKoDsa2+TyXh5euE20J7VakNjPVQ==
   dependencies:
     "@iconify/vue" "^4.0.2"
     "@types/node" "^20.1.4"
