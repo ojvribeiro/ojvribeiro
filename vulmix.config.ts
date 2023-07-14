@@ -103,4 +103,7 @@ export default defineVulmixConfig({
       },
     ],
   },
+  transition: {
+    name: 'fade',
+  },
 })

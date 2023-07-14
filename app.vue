@@ -70,4 +70,14 @@
 
     font-family: 'Poppins', sans-serif;
   }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: 0.3s ease-in-out;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
 </style>
