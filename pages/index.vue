@@ -5,10 +5,6 @@
 <template>
   <div>
     <Layout>
-      <Head>
-        <title>Home</title>
-      </Head>
-
       <header class="h-screen">
         <Container class="h-full">
           <div class="grid h-full grid-cols-2 gap-8 pt-10 lg:pt-0">
