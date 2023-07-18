@@ -10,7 +10,7 @@ export default defineVulmixConfig({
 
       {
         name: 'description',
-        content: 'Victor Ribeiro is a front-end web developer.',
+        content: 'Creative web developer.',
       },
 
       {
@@ -40,13 +40,13 @@ export default defineVulmixConfig({
 
       {
         property: 'og:description',
-        content: 'Victor Ribeiro is a front-end web developer.',
+        content: 'Creative web developer.',
       },
 
       {
         property: 'og:image',
         content:
-          'https://ojvribeiro.me/assets/icons/favicon/android-chrome-512x512.png',
+          'https://ojvribeiro.me/assets/img/seo/ojvribeiro-1200x630.png',
       },
 
       {
@@ -66,13 +66,13 @@ export default defineVulmixConfig({
 
       {
         property: 'twitter:description',
-        content: 'Victor Ribeiro is a front-end web developer.',
+        content: 'Creative web developer.',
       },
 
       {
         property: 'twitter:image',
         content:
-          'https://ojvribeiro.me/assets/icons/favicon/android-chrome-512x512.png',
+          'https://ojvribeiro.me/assets/img/seo/ojvribeiro-1200x630.png',
       },
     ],
 
