@@ -46,7 +46,7 @@ export default defineVulmixConfig({
       {
         property: 'og:image',
         content:
-          'https://ojvribeiro.me/assets/img/seo/ojvribeiro-1200x630.png',
+          'https://ojvribeiro.me/assets/img/seo/ojvribeiro-1200x630.png?v=ddc6bae',
       },
 
       {
@@ -72,7 +72,7 @@ export default defineVulmixConfig({
       {
         property: 'twitter:image',
         content:
-          'https://ojvribeiro.me/assets/img/seo/ojvribeiro-1200x630.png',
+          'https://ojvribeiro.me/assets/img/seo/ojvribeiro-1200x630.png?v=ddc6bae',
       },
     ],
 
