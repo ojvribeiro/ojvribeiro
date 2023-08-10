@@ -53,7 +53,26 @@
 
   body {
     @apply bg-gradient-to-r from-brand-purple to-brand-green;
+    overflow-y: scroll;
   }
+
+  ::-webkit-scrollbar {
+    @apply w-4;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-brand-green;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
 
   pre,
   code {
