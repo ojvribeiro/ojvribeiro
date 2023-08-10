@@ -26,7 +26,7 @@
       crossorigin="anonymous"
     />
   </Head>
-
+  <Navbar />
   <App />
 </template>
 
