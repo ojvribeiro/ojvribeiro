@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute top-1/2 left-1/2 z-[1] box-border aspect-square w-[200%] -translate-x-1/2 -translate-y-1/2 rounded-full"
+    class="absolute left-1/2 top-1/2 z-[1] box-border aspect-square w-[190%] -translate-x-1/2 -translate-y-1/2 rounded-full"
   >
     <div class="orbit-wrapper h-full w-full rounded-full">
       <div class="orbit-item" :title="lang.name" v-for="lang in langs">
@@ -61,7 +61,7 @@
 
       &:hover {
         .orbit-item {
-          scale: 1;
+          scale: 0.95;
           opacity: 0.8;
         }
       }
