@@ -1,5 +1,9 @@
 <script setup lang="ts">
   const { data, pending } = useFetch('https://api.github.com/users/ojvribeiro')
+
+  useHead({
+    title: '',
+  })
 </script>
 
 <template>

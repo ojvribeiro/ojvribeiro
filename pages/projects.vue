@@ -1,9 +1,11 @@
+<script setup lang="ts">
+  useHead({
+    title: 'Projetos',
+  })
+</script>
+
 <template>
   <div>
-    <Head>
-      <title>Projetos</title>
-    </Head>
-
     <Layout>
       <div class="py-32">
         <Container>
