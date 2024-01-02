@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "tailwindcss": "^3.2.7",
-    "vulmix": "^0.6.1-beta"
+    "vulmix": "0.7.0-preview.3"
   },
   "devDependencies": {
     "prettier": "2.8.8",

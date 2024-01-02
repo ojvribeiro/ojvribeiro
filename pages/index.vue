@@ -1,5 +1,9 @@
 <script setup lang="ts">
-  const { data, pending } = useFetch('https://api.github.com/users/ojvribeiro')
+  import { GitHubUser } from '~/types/github-rest'
+
+  const { data, isPending } = useFetch<GitHubUser>(
+    'https://api.github.com/users/ojvribeiro'
+  )
 
   useHead({
     title: '',
@@ -22,9 +26,9 @@
                   class="ping relative aspect-square w-[100px] overflow-hidden rounded-full ring-4 transition-transform lg:w-[200px] xl:w-[300px]"
                 >
                   <div
-                    v-if="pending"
+                    v-if="isPending"
                     class="h-full w-full animate-pulse bg-white/10"
-                  ></div>
+                  />
 
                   <img
                     v-else
