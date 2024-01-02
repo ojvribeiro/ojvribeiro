@@ -18,7 +18,12 @@
 </template>
 
 <script setup lang="ts">
-  const langs = ref([
+  const langs = ref<
+    {
+      name: string
+      icon: string
+    }[]
+  >([
     {
       name: 'JavaScript',
       icon: 'skill-icons:javascript',
