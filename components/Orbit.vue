@@ -3,7 +3,12 @@
     class="absolute left-1/2 top-1/2 z-[1] box-border aspect-square w-[190%] -translate-x-1/2 -translate-y-1/2 rounded-full"
   >
     <div class="orbit-wrapper h-full w-full rounded-full">
-      <div class="orbit-item" :title="lang.name" v-for="lang in langs">
+      <div
+        v-for="(lang, index) in langs"
+        class="orbit-item"
+        :class="['orbit-item-' + (index + 1)]"
+        :title="lang.name"
+      >
         <div class="orbit-item-content">
           <Icon :icon="lang.icon" class="!block" />
         </div>
@@ -51,6 +56,41 @@
 
 <style scoped lang="scss">
   $time: 40s;
+
+  $translations: (
+    1: (
+      -300%,
+      0%,
+    ),
+    2: (
+      300%,
+      0%,
+    ),
+    3: (
+      0%,
+      -300%,
+    ),
+    4: (
+      0%,
+      300%,
+    ),
+    5: (
+      -210%,
+      -210%,
+    ),
+    6: (
+      210%,
+      210%,
+    ),
+    7: (
+      210%,
+      -210%,
+    ),
+    8: (
+      -210%,
+      210%,
+    ),
+  );
 
   .orbit {
     &-wrapper {
@@ -111,7 +151,7 @@
         }
 
         &-content {
-          transform: rotate(0deg);
+          rotate: 0deg;
           animation-name: orbit-compensation;
           animation-iteration-count: infinite;
           animation-duration: $time;
@@ -129,49 +169,24 @@
             transform: scale(1.4);
           }
         }
-
-        &:nth-child(1) {
-          transform: translate(-300%, 0%);
-        }
-
-        &:nth-child(2) {
-          transform: translate(300%, 0%);
-        }
-
-        &:nth-child(4) {
-          transform: translate(0%, 300%);
-        }
-
-        &:nth-child(3) {
-          transform: translate(0%, -300%);
-        }
-
-        &:nth-child(5) {
-          transform: translate(-210%, -210%);
-        }
-
-        &:nth-child(6) {
-          transform: translate(210%, 210%);
-        }
-
-        &:nth-child(7) {
-          transform: translate(210%, -210%);
-        }
-
-        &:nth-child(8) {
-          transform: translate(-210%, 210%);
-        }
       }
+    }
+  }
+
+  @each $i, $translation in $translations {
+    .orbit-item:nth-child(#{$i}) {
+      $translation: map-get($translations, $i);
+      transform: translate($translation...);
     }
   }
 
   @keyframes orbit {
     0% {
-      transform: rotate(0deg);
+      rotate: 0deg;
     }
 
     100% {
-      transform: rotate(360deg);
+      rotate: 360deg;
     }
   }
 
