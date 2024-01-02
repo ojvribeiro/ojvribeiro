@@ -55,7 +55,7 @@
 </script>
 
 <style scoped lang="scss">
-  $time: 40s;
+  $time: 80s;
 
   $translations: (
     1: (
