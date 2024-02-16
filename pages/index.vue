@@ -1,7 +1,9 @@
 <script setup lang="ts">
-  import { GitHubUser } from '~/types/github-rest'
+  import { Endpoints } from '@octokit/types'
 
-  const { data, isPending } = useFetch<GitHubUser>(
+  type User = Endpoints['GET /users/{username}']['response']['data']
+
+  const { data, isPending } = useFetch<User>(
     'https://api.github.com/users/ojvribeiro'
   )
 
