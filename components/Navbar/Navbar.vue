@@ -32,19 +32,19 @@
       <ul class="flex items-center gap-3 text-3xl">
         <li>
           <a href="https://github.com/ojvribeiro" target="_blank">
-            <Icon icon="iconoir:github-outline" />
+            <Icon icon="iconoir:github-circle" />
           </a>
         </li>
 
         <li>
-          <a href="https://github.com/ojvribeiro" target="_blank">
+          <a href="https://linkedin.com/in/ojvribeiro" target="_blank">
             <Icon icon="iconoir:linkedin" />
           </a>
         </li>
 
         <li>
-          <a href="https://github.com/ojvribeiro" target="_blank">
-            <Icon icon="iconoir:twitter" />
+          <a href="https://x.com/ojvribeiro" target="_blank">
+            <Icon icon="iconoir:x" />
           </a>
         </li>
       </ul>
