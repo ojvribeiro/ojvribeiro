@@ -80,26 +80,26 @@ export default defineVulmixConfig({
       {
         rel: 'apple-touch-icon',
         sizes: '192x192',
-        href: '/assets/icons/favicon/apple-touch-icon.png',
+        href: 'https://ojvribeiro.mehttps://ojvribeiro.me/assets/icons/favicon/apple-touch-icon.png',
       },
 
       {
         rel: 'icon',
         sizes: '32x32',
         type: 'image/png',
-        href: '/assets/icons/favicon/favicon-32x32.png',
+        href: 'https://ojvribeiro.me/assets/icons/favicon/favicon-32x32.png',
       },
 
       {
         rel: 'icon',
         sizes: '16x16',
         type: 'image/png',
-        href: '/assets/icons/favicon/favicon-16x16.png',
+        href: 'https://ojvribeiro.me/assets/icons/favicon/favicon-16x16.png',
       },
 
       {
         rel: 'manifest',
-        href: '/assets/icons/favicon/site.webmanifest',
+        href: 'https://ojvribeiro.me/assets/icons/favicon/site.webmanifest',
       },
     ],
   },

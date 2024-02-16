@@ -8,7 +8,7 @@
   )
 
   useHead({
-    title: '',
+    title: null,
   })
 </script>
 
@@ -27,14 +27,8 @@
                 <div
                   class="ping relative aspect-square w-[100px] overflow-hidden rounded-full ring-4 transition-transform lg:w-[200px] xl:w-[300px]"
                 >
-                  <div
-                    v-if="isPending"
-                    class="h-full w-full animate-pulse bg-white/10"
-                  />
-
                   <img
-                    v-else
-                    :src="data?.avatar_url"
+                    src="https://github.com/ojvribeiro.png"
                     alt="Victor Ribeiro @ojvribeiro"
                     class="w-full object-cover"
                     width="300"
@@ -48,18 +42,17 @@
               <div class="space-y-6 px-4 sm:px-8 md:px-16">
                 <div>
                   <p class="font-sans font-semibold text-white/50">
-                    Olá! Eu sou o
+                    Hi! 👋 My name is
                   </p>
 
                   <h1 class="text-4xl text-white md:text-6xl">
-                    Victor Ribeiro
+                    {{ data?.name }}
                   </h1>
                 </div>
 
                 <div>
                   <p class="text-lg text-white">
-                    Sou um desenvolvedor front-end que ama codar e ama mais
-                    ainda o JavaScript desde 2010.
+                    {{ data?.bio }}
                     <Icon icon="fluent-emoji-flat:red-heart" />
                   </p>
                 </div>
@@ -119,12 +112,12 @@
                   </a>
 
                   <a
-                    href="https://twitter.com/ojvribeiro"
+                    href="https://x.com/ojvribeiro"
                     title="Twitter"
                     target="_blank"
                     rel="noopener nofollow noreferrer"
                   >
-                    <Icon icon="iconoir:twitter" />
+                    <Icon icon="iconoir:x" />
                   </a>
                 </div>
               </div>
