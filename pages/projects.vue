@@ -2,6 +2,32 @@
   useHead({
     title: 'Projetos',
   })
+
+  const projects = ref([
+    {
+      title: 'Laura Negócios',
+      link: 'https://lauranegocios.com.br',
+      stack: [
+        { name: 'Nuxt 3', icon: 'logos:nuxt-icon' },
+        { name: 'Tailwind', icon: 'logos:tailwindcss-icon' },
+        { name: 'TypeScript', icon: 'logos:typescript-icon' },
+      ],
+    },
+    {
+      title: 'Instituto Peabiru',
+      link: 'https://peabiru.org.br',
+      stack: [
+        { name: 'Wordpress', icon: 'logos:wordpress-icon' },
+        { name: 'Sass', icon: 'logos:sass' },
+        { name: 'JavaScript', icon: 'logos:javascript' },
+        { name: 'Bootstrap', icon: 'logos:bootstrap' },
+      ],
+    },
+  ])
+
+  function urlToUri(url: string) {
+    return url.split(/https?:\/\//)[1]
+  }
 </script>
 
 <template>
@@ -11,127 +37,40 @@
         <Container>
           <div class="relative rounded-2xl bg-white/5 px-6 py-12 text-white">
             <div class="space-y-6">
-              <h1 class="font-poppins text-4xl font-bold">Projetos</h1>
+              <h1 class="font-poppins text-4xl font-bold">Projects</h1>
 
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
+              <div>
+                <ul class="flex flex-col gap-4">
+                  <li class="flex items-center gap-2" v-for="item in projects">
+                    <Icon icon="bx:chevron-right" class="text-2xl" />
 
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
+                    <span>
+                      {{ item.title }} (<a
+                        :href="item.link"
+                        class="border-b border-white/10 text-brand-blue-50 transition-colors hover:border-white"
+                        target="_blank"
+                        rel="noopener nofollow noreferrer"
+                        >{{ urlToUri(item.link) }}
+                        <Icon icon="lucide:external-link" class="mb-3" /></a
+                      >)
+                    </span>
 
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
-
-              <p>
-                Aqui estão alguns dos meus projetos pessoais que eu fiz durante a
-                minha carreira.
-              </p>
+                    <div>
+                      <ul class="flex gap-2">
+                        <li
+                          v-for="stack in item.stack"
+                          :key="stack.icon"
+                          class="grid h-7 w-7 place-items-center rounded-md bg-white/90 text-white transition-transform hover:translate-y-1"
+                          :title="stack.name"
+                        >
+                          <span class="sr-only">{{ stack.name }}</span>
+                          <Icon :icon="stack.icon" class="text-2xl" />
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </Container>
