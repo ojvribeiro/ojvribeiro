@@ -48,7 +48,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-brand-green;
+    @apply bg-slate-800;
   }
 
   ::-webkit-scrollbar-thumb {
