@@ -69,7 +69,7 @@
   ul.menu {
     li {
       a {
-        @apply block rounded-lg bg-transparent px-4 py-2 backdrop-blur-md transition hover:bg-white/10;
+        @apply block rounded-lg bg-transparent px-4 py-2 transition hover:text-brand-blue-50;
       }
 
       .router-link-active {
