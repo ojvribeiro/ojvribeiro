@@ -136,11 +136,11 @@
 
                   <a
                     href="https://x.com/ojvribeiro"
-                    title="Twitter"
+                    title="Twitter/X"
                     target="_blank"
                     rel="noopener nofollow noreferrer"
                   >
-                    <Icon icon="iconoir:x" />
+                    <Icon icon="lucide:twitter" />
                   </a>
                 </div>
               </div>

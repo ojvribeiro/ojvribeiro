@@ -34,7 +34,7 @@
 
               <Transition name="slide-down">
                 <div
-                  class="drawer fixed h-1/2 inset-0 z-50 flex flex-col bg-gradient-to-r from-brand-purple to-brand-green backdrop-blur-xl"
+                  class="drawer fixed inset-0 z-50 flex h-1/2 flex-col bg-gradient-to-r from-brand-purple to-brand-green backdrop-blur-xl"
                   v-show="menu.drawer.isOpen"
                 >
                   <div class="flex justify-end px-4 py-4">
@@ -112,20 +112,35 @@
 
         <ul class="flex items-center gap-3 text-3xl">
           <li>
-            <a href="https://github.com/ojvribeiro" target="_blank">
+            <a
+              href="https://github.com/ojvribeiro"
+              title="GitHub"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
               <Icon icon="iconoir:github-circle" />
             </a>
           </li>
 
           <li>
-            <a href="https://linkedin.com/in/ojvribeiro" target="_blank">
+            <a
+              href="https://linkedin.com/in/ojvribeiro"
+              title="LinkedIn"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
               <Icon icon="iconoir:linkedin" />
             </a>
           </li>
 
           <li>
-            <a href="https://x.com/ojvribeiro" target="_blank">
-              <Icon icon="iconoir:x" />
+            <a
+              href="https://x.com/ojvribeiro"
+              title="Twitter/X"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <Icon icon="iconoir:twitter" />
             </a>
           </li>
         </ul>
