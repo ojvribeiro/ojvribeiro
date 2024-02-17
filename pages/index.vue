@@ -46,13 +46,24 @@
                   </p>
 
                   <h1 class="text-4xl text-white md:text-6xl">
-                    {{ data?.name }}
+                    Victor Ribeiro
                   </h1>
                 </div>
 
                 <div>
                   <p class="text-lg text-white">
-                    {{ data?.bio }}
+                    I'm a creative brazilian front-end developer.
+                  </p>
+
+                  <p></p>
+
+                  <p class="text-base text-white/50">
+                    This website is
+                    <a
+                      href="https://github.com/ojvribeiro/ojvribeiro"
+                      class="border-b border-white/10 text-white transition-colors hover:border-white"
+                      >open-source</a
+                    >!
                     <Icon icon="fluent-emoji-flat:red-heart" />
                   </p>
                 </div>
