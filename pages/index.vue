@@ -23,15 +23,17 @@
     <Layout>
       <header>
         <Container class="mx-auto h-full">
-          <div class="grid h-full grid-cols-2 items-center gap-8 pt-10 lg:pt-0">
+          <div
+            class="grid h-full pt-10 md:grid-cols-2 md:items-center md:gap-8 lg:pt-0"
+          >
             <div
-              class="col-span-2 flex items-center justify-center lg:col-span-1"
+              class="col-span-2 flex items-center md:justify-center lg:col-span-1"
             >
-              <div class="relative">
-                <Orbit />
+              <div class="relative px-4 sm:px-8 md:px-16">
+                <Orbit class="hidden md:block" />
 
                 <div
-                  class="ping relative aspect-square w-[100px] overflow-hidden rounded-full ring-4 transition-transform lg:w-[200px] xl:w-[300px]"
+                  class="ping relative aspect-square w-[100px] overflow-hidden rounded-full transition-transform lg:w-[200px] xl:w-[300px]"
                 >
                   <div
                     v-if="isLoading"
@@ -50,7 +52,7 @@
               </div>
             </div>
 
-            <div class="col-span-2 flex items-center lg:col-span-1">
+            <div class="col-span-2 flex md:items-center lg:col-span-1">
               <div class="space-y-6 px-4 sm:px-8 md:px-16">
                 <div>
                   <p class="font-sans font-semibold text-white/50">
