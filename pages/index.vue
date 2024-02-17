@@ -15,9 +15,9 @@
 <template>
   <div>
     <Layout>
-      <header class="h-screen">
-        <Container class="h-full">
-          <div class="grid h-full grid-cols-2 gap-8 pt-10 lg:pt-0">
+      <header>
+        <Container class="mx-auto h-full">
+          <div class="grid h-full grid-cols-2 items-center gap-8 pt-10 lg:pt-0">
             <div
               class="col-span-2 flex items-center justify-center lg:col-span-1"
             >
