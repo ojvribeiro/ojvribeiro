@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute left-1/2 top-1/2 z-[1] box-border aspect-square w-[190%] -translate-x-1/2 -translate-y-1/2 rounded-full"
+    class="absolute left-1/2 top-1/2 z-[1] box-border aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full"
   >
     <div class="orbit-wrapper h-full w-full rounded-full">
       <div
@@ -155,7 +155,7 @@
           transition: 0.2s cubic-bezier(0.52, 0, 0.38, 2.12);
         }
 
-        &-content {
+        .orbit-item-content {
           rotate: 0deg;
           animation-name: orbit-compensation;
           animation-iteration-count: infinite;
