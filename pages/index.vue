@@ -1,11 +1,17 @@
 <script setup lang="ts">
+  import { useImage, useFetch } from '@vueuse/core'
   import { Endpoints } from '@octokit/types'
 
   type User = Endpoints['GET /users/{username}']['response']['data']
 
-  const { data, isPending } = useFetch<User>(
-    'https://api.github.com/users/ojvribeiro'
+  const { data, isFetching } = await useFetch<User>(
+    'https://api.github.com/users/ojvribeiro',
+    {}
   )
+
+  const avatarUrl = 'https://github.com/ojvribeiro.png'
+
+  const { isLoading } = useImage({ src: data.value?.avatar_url })
 
   useHead({
     title: null,
@@ -27,8 +33,14 @@
                 <div
                   class="ping relative aspect-square w-[100px] overflow-hidden rounded-full ring-4 transition-transform lg:w-[200px] xl:w-[300px]"
                 >
+                  <div
+                    v-if="isLoading"
+                    class="h-full w-full animate-pulse bg-slate-400"
+                  />
+
                   <img
-                    src="https://github.com/ojvribeiro.png"
+                    v-else
+                    :src="avatarUrl"
                     alt="Victor Ribeiro @ojvribeiro"
                     class="w-full object-cover"
                     width="300"
