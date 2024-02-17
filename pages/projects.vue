@@ -31,11 +31,11 @@
 </script>
 
 <template>
-  <div>
+  <div class="bg-slate-800">
     <Layout>
       <div class="py-32">
         <Container>
-          <div class="relative rounded-2xl bg-white/5 px-6 py-12 text-white">
+          <div class="relative py-12 text-white">
             <div class="space-y-6">
               <h1 class="font-poppins text-4xl font-bold">Projects</h1>
 
