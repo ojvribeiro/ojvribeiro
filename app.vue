@@ -1,8 +1,6 @@
 <template>
   <div>
     <Head>
-      <link rel="manifest" href="@/assets/icons/favicon/site.webmanifest" />
-
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
         rel="preconnect"
