@@ -26,7 +26,7 @@
 
               <Transition name="fade">
                 <div
-                  class="fixed inset-0 z-40 bg-black/60"
+                  class="fixed h-screen w-screen inset-0 z-40 bg-black/60"
                   v-if="menu.drawer.isOpen"
                   @click="menu.drawer.isOpen = false"
                 />
@@ -34,7 +34,7 @@
 
               <Transition name="slide-down">
                 <div
-                  class="drawer fixed inset-0 z-50 flex h-1/2 flex-col bg-gradient-to-r from-brand-purple to-brand-green backdrop-blur-xl"
+                  class="drawer fixed inset-0 z-50 flex h-[80svh] flex-col bg-gradient-to-r from-brand-purple to-brand-green backdrop-blur-xl"
                   v-show="menu.drawer.isOpen"
                 >
                   <div class="flex justify-end px-4 py-4">
@@ -198,11 +198,11 @@
 
   .slide-down-enter-active,
   .slide-down-leave-active {
-    @apply translate-y-0 transition-transform duration-300;
+    @apply translate-y-0 opacity-100 transition duration-300;
   }
 
   .slide-down-enter-from,
   .slide-down-leave-to {
-    @apply -translate-y-full;
+    @apply -translate-y-full opacity-0;
   }
 </style>
