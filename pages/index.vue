@@ -67,6 +67,8 @@
                     This website is
                     <a
                       href="https://github.com/ojvribeiro/ojvribeiro"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
                       class="link"
                       >open-source</a
                     >!
