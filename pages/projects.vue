@@ -47,7 +47,7 @@
                     <span>
                       {{ item.title }} (<a
                         :href="item.link"
-                        class="border-b border-white/10 text-brand-blue-50 transition-colors hover:border-white"
+                        class="link"
                         target="_blank"
                         rel="noopener nofollow noreferrer"
                         >{{ urlToUri(item.link) }}

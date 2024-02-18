@@ -41,6 +41,10 @@
     overflow-y: scroll;
   }
 
+  a.link {
+    @apply border-b border-white/10 text-white transition-colors hover:border-white;
+  }
+
   .gradient {
     @apply bg-gradient-to-r from-brand-purple to-brand-green;
   }

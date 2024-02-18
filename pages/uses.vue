@@ -36,6 +36,13 @@
         <Container>
           <div class="relative py-12 text-white">
             <div class="space-y-6">
+              <h1 class="font-poppins text-4xl font-bold">Uses</h1>
+
+              <p>
+                Here are some of the tools, services and hardware that I use on
+                a daily basis.
+              </p>
+
               <h2 class="font-poppins text-2xl font-bold">Editor</h2>
 
               <div>

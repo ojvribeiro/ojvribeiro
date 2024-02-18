@@ -17,17 +17,17 @@
               href="https://vuejs.org"
               target="_blank"
               rel="nofollow noreferrer noopener"
-              class="border-b border-white/10 transition-colors hover:border-white"
+              class="link"
               >Vue</a
             ><Icon icon="bx:bxl-vuejs" class="text-2xl" /> +
             <a
               href="https://vulmix.dev"
               target="_blank"
               rel="nofollow noreferrer noopener"
-              class="border-b border-white/10 transition-colors hover:border-white"
+              class="link"
               >Vulmix</a
             >
-            <Icon name="vulmix" class="text-2xl ml-[2px]" />
+            <Icon name="vulmix" class="ml-[2px] text-2xl" />
           </p>
         </div>
       </div>

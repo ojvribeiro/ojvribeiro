@@ -67,7 +67,7 @@
                     This website is
                     <a
                       href="https://github.com/ojvribeiro/ojvribeiro"
-                      class="border-b border-white/10 text-white transition-colors hover:border-white"
+                      class="link"
                       >open-source</a
                     >!
                     <Icon icon="fluent-emoji-flat:red-heart" />
