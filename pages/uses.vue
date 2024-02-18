@@ -5,7 +5,7 @@
 
   const editor = ref([
     'Visual Studio Code',
-    'Font: Fira Code',
+    'Font: Consolas',
     'Theme: Material Syntax - Dark',
     'Icons: Material Icon Theme',
   ])
