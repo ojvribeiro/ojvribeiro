@@ -1,6 +1,6 @@
 <script setup lang="ts">
   useHead({
-    title: 'Projetos',
+    title: 'Projects',
   })
 
   const projects = ref([
