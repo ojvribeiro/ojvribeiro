@@ -5,6 +5,17 @@
 
   const projects = ref([
     {
+      title: 'This site :P',
+      link: 'https://ojvribeiro.me',
+
+      stack: [
+        { name: 'Vulmix', icon: 'vulmix', customIcon: true },
+        { name: 'Tailwind', icon: 'logos:tailwindcss-icon' },
+        { name: 'TypeScript', icon: 'logos:typescript-icon' },
+        { name: 'Sass', icon: 'logos:sass' },
+      ],
+    },
+    {
       title: 'Laura Negócios',
       link: 'https://lauranegocios.com.br',
       stack: [
@@ -36,6 +47,17 @@
         { name: 'Webpack + Laravel Mix', icon: 'logos:webpack' },
       ],
     },
+    {
+      title: 'Quadra Engenharia',
+      link: 'https://quadra.com.vc',
+      stack: [
+        { name: 'Laravel', icon: 'logos:laravel' },
+        { name: 'Sass', icon: 'logos:sass' },
+        { name: 'JavaScript', icon: 'logos:javascript' },
+        { name: 'Bootstrap', icon: 'logos:bootstrap' },
+        { name: 'Webpack + Laravel Mix', icon: 'logos:webpack' },
+      ],
+    },
   ])
 
   function urlToUri(url: string) {
@@ -52,9 +74,7 @@
             <div class="space-y-6">
               <h1 class="font-poppins text-4xl font-bold">Projects</h1>
 
-              <p>
-                Here are some of the projects that I've worked on.
-              </p>
+              <p>Here are some of the projects that I've worked on.</p>
 
               <div>
                 <ul class="flex flex-col gap-4">
@@ -77,11 +97,17 @@
                         <li
                           v-for="stack in item.stack"
                           :key="stack.icon"
-                          class="grid h-7 w-7 place-items-center rounded-md bg-white/90 text-white transition-transform hover:translate-y-1"
+                          class="grid h-7 w-7 place-items-center rounded-md bg-white/90 transition-transform hover:translate-y-1"
                           :title="stack.name"
                         >
                           <span class="sr-only">{{ stack.name }}</span>
-                          <Icon :icon="stack.icon" class="text-2xl" />
+                          <Icon
+                            v-if="stack.customIcon"
+                            :name="stack.icon"
+                            class="text-2xl"
+                            :font="false"
+                          />
+                          <Icon v-else :icon="stack.icon" class="text-2xl" />
                         </li>
                       </ul>
                     </div>
