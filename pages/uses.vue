@@ -30,7 +30,7 @@
 </script>
 
 <template>
-  <div class="bg-slate-800">
+  <div class="bg-indigo-900">
     <Layout>
       <div class="py-32">
         <Container>

@@ -37,8 +37,12 @@
   }
 
   body {
-    @apply bg-gradient-to-r from-brand-purple to-brand-green;
+    @apply gradient;
     overflow-y: scroll;
+  }
+
+  .gradient {
+    @apply bg-gradient-to-r from-brand-purple to-brand-green;
   }
 
   ::-webkit-scrollbar {
@@ -57,7 +61,6 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.2);
   }
-
 
   pre,
   code {

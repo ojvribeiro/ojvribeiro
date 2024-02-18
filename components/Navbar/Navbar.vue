@@ -8,7 +8,7 @@
 
 <template>
   <nav
-    class="fixed left-0 right-0 top-0 z-50 w-full bg-gradient-to-r from-brand-purple/50 to-brand-green/50 px-4 py-4 text-white transition duration-300 md:px-6"
+    class="fixed left-0 right-0 top-0 z-50 w-full px-4 py-4 text-white transition duration-300 md:px-6"
     :class="[
       y > 24
         ? 'shadow-[0_28px_20px_-28px_rgb(0_0_0_/_30%)] backdrop-blur-lg'
