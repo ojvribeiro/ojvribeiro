@@ -1,11 +1,12 @@
 <script setup lang="ts">
+  import { useImage } from '@vueuse/core'
   import { Endpoints } from '@octokit/types'
 
   type User = Endpoints['GET /users/{username}']['response']['data']
 
-  const { data } = useFetch<User>(
-    'https://api.github.com/users/ojvribeiro'
-  )
+  const image = 'https://github.com/ojvribeiro.png'
+
+  const { isLoading } = useImage({ src: image })
 
   useHead({
     title: null,
@@ -26,18 +27,20 @@
               <div class="relative px-4 sm:px-8 md:px-16">
                 <Orbit class="hidden md:block" />
 
-                <div
-                  class="ping relative aspect-square w-[100px] overflow-hidden rounded-full transition-transform lg:w-[200px] xl:w-[300px]"
-                >
-
-                  <img
-                    :src="data?.avatar_url"
-                    alt="Victor Ribeiro @ojvribeiro"
-                    class="w-full object-cover"
-                    width="300"
-                    height="300"
-                  />
-                </div>
+                <Transition name="fade-zoom">
+                  <div
+                    v-if="!isLoading"
+                    class="ping relative aspect-square w-[100px] overflow-hidden rounded-full transition-transform lg:w-[200px] xl:w-[300px]"
+                  >
+                    <img
+                      :src="image"
+                      alt="Victor Ribeiro @ojvribeiro"
+                      class="w-full object-cover"
+                      width="300"
+                      height="300"
+                    />
+                  </div>
+                </Transition>
               </div>
             </div>
 
@@ -150,5 +153,14 @@
     a {
       @apply text-blue-300 transition duration-200 hover:scale-110 hover:text-white;
     }
+  }
+
+  .fade-zoom-enter-active {
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .fade-zoom-enter-from {
+    opacity: 0;
+    transform: scale(0.9);
   }
 </style>
