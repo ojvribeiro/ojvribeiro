@@ -11,6 +11,7 @@
         { name: 'Nuxt 3', icon: 'logos:nuxt-icon' },
         { name: 'Tailwind', icon: 'logos:tailwindcss-icon' },
         { name: 'TypeScript', icon: 'logos:typescript-icon' },
+        { name: 'Builder.io', icon: 'logos:builder-io-icon' },
       ],
     },
     {
@@ -21,6 +22,18 @@
         { name: 'Sass', icon: 'logos:sass' },
         { name: 'JavaScript', icon: 'logos:javascript' },
         { name: 'Bootstrap', icon: 'logos:bootstrap' },
+        { name: 'Webpack + Laravel Mix', icon: 'logos:webpack' },
+      ],
+    },
+    {
+      title: 'Hexcel Elevadores',
+      link: 'https://hexcel.com.br',
+      stack: [
+        { name: 'Wordpress', icon: 'logos:wordpress-icon' },
+        { name: 'Sass', icon: 'logos:sass' },
+        { name: 'JavaScript', icon: 'logos:javascript' },
+        { name: 'Bootstrap', icon: 'logos:bootstrap' },
+        { name: 'Webpack + Laravel Mix', icon: 'logos:webpack' },
       ],
     },
   ])
@@ -38,6 +51,10 @@
           <div class="relative py-12 text-white">
             <div class="space-y-6">
               <h1 class="font-poppins text-4xl font-bold">Projects</h1>
+
+              <p>
+                Here are some of the projects that I've worked on.
+              </p>
 
               <div>
                 <ul class="flex flex-col gap-4">
