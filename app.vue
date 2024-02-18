@@ -20,7 +20,7 @@
 <script setup lang="ts">
   useHead({
     titleTemplate: titleChunk =>
-      titleChunk ? `${titleChunk} - Victor Ribeiro` : 'Victor Ribeiro',
+      titleChunk ? `${titleChunk} › Victor Ribeiro` : 'Victor Ribeiro',
   })
 </script>
 
