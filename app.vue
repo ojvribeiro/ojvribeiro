@@ -1,41 +1,26 @@
 <template>
-  <Head>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/icons/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/icons/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/icons/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/assets/icons/favicon/site.webmanifest" />
+  <div>
+    <Head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin="anonymous"
+      />
+    </Head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
-    />
-  </Head>
+    <Navbar />
 
-  <App />
+    <div>
+      <App />
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-  import { useHead } from '@vueuse/head'
-
   useHead({
     titleTemplate: titleChunk =>
-      titleChunk ? `${titleChunk} - Victor Ribeiro` : 'Victor Ribeiro',
+      titleChunk ? `${titleChunk} › Victor Ribeiro` : 'Victor Ribeiro',
   })
 </script>
 
@@ -52,7 +37,33 @@
   }
 
   body {
+    @apply gradient;
+    overflow-y: scroll;
+  }
+
+  a.link {
+    @apply border-b border-white/10 text-white transition-colors hover:border-white;
+  }
+
+  .gradient {
     @apply bg-gradient-to-r from-brand-purple to-brand-green;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-4;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.25rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
   }
 
   pre,

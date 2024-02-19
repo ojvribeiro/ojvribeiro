@@ -1,44 +1,54 @@
 <script setup lang="ts">
-  const { data, pending } = useFetch('https://api.github.com/users/ojvribeiro')
+  import { useImage } from '@vueuse/core'
+  import { Endpoints } from '@octokit/types'
+
+  type User = Endpoints['GET /users/{username}']['response']['data']
+
+  const image = 'https://github.com/ojvribeiro.png'
+
+  const { isLoading } = useImage({ src: image })
+
+  useHead({
+    title: null,
+  })
 </script>
 
 <template>
   <div>
     <Layout>
-      <header class="h-screen">
-        <Container class="h-full">
-          <div class="grid h-full grid-cols-2 gap-8 pt-10 lg:pt-0">
+      <header>
+        <Container class="mx-auto h-full">
+          <div
+            class="grid h-full pt-10 md:grid-cols-2 md:items-center md:gap-8 lg:pt-0"
+          >
             <div
-              class="col-span-2 flex items-center justify-center lg:col-span-1"
+              class="col-span-2 flex items-center md:justify-center lg:col-span-1"
             >
-              <div class="relative">
-                <Orbit />
+              <div class="relative px-4 sm:px-8 md:px-16">
+                <Orbit class="hidden md:block" />
 
-                <div
-                  class="ping relative aspect-square w-[100px] overflow-hidden rounded-full ring-4 transition-transform lg:w-[200px] xl:w-[300px]"
-                >
+                <Transition name="fade-zoom">
                   <div
-                    v-if="pending"
-                    class="h-full w-full animate-pulse bg-white/10"
-                  ></div>
-
-                  <img
-                    v-else
-                    :src="data?.avatar_url"
-                    alt="Victor Ribeiro @ojvribeiro"
-                    class="w-full object-cover"
-                    width="300"
-                    height="300"
-                  />
-                </div>
+                    v-if="!isLoading"
+                    class="ping relative aspect-square w-[100px] overflow-hidden rounded-full transition-transform lg:w-[200px] xl:w-[300px]"
+                  >
+                    <img
+                      :src="image"
+                      alt="Victor Ribeiro @ojvribeiro"
+                      class="w-full object-cover"
+                      width="300"
+                      height="300"
+                    />
+                  </div>
+                </Transition>
               </div>
             </div>
 
-            <div class="col-span-2 flex items-center lg:col-span-1">
+            <div class="col-span-2 flex md:items-center lg:col-span-1">
               <div class="space-y-6 px-4 sm:px-8 md:px-16">
                 <div>
                   <p class="font-sans font-semibold text-white/50">
-                    Olá! Eu sou o
+                    Hi! 👋 My name is
                   </p>
 
                   <h1 class="text-4xl text-white md:text-6xl">
@@ -48,8 +58,20 @@
 
                 <div>
                   <p class="text-lg text-white">
-                    Sou um desenvolvedor front-end que ama codar e ama mais
-                    ainda o JavaScript desde 2010.
+                    I'm a creative brazilian front-end developer.
+                  </p>
+
+                  <p></p>
+
+                  <p class="text-base text-white/50">
+                    This website is
+                    <a
+                      href="https://github.com/ojvribeiro/ojvribeiro"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      class="link"
+                      >open-source</a
+                    >!
                     <Icon icon="fluent-emoji-flat:red-heart" />
                   </p>
                 </div>
@@ -109,12 +131,12 @@
                   </a>
 
                   <a
-                    href="https://twitter.com/ojvribeiro"
-                    title="Twitter"
+                    href="https://x.com/ojvribeiro"
+                    title="Twitter/X"
                     target="_blank"
                     rel="noopener nofollow noreferrer"
                   >
-                    <Icon icon="iconoir:twitter" />
+                    <Icon icon="lucide:twitter" />
                   </a>
                 </div>
               </div>
@@ -133,5 +155,14 @@
     a {
       @apply text-blue-300 transition duration-200 hover:scale-110 hover:text-white;
     }
+  }
+
+  .fade-zoom-enter-active {
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .fade-zoom-enter-from {
+    opacity: 0;
+    transform: scale(0.9);
   }
 </style>
