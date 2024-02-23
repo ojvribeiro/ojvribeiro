@@ -53,7 +53,7 @@
                         >
                           <Icon icon="lucide:home" />
 
-                          <span>Home</span>
+                          <span>Home Page</span>
                         </Link>
                       </li>
 
