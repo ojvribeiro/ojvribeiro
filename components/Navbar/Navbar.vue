@@ -53,7 +53,7 @@
                         >
                           <Icon icon="lucide:home" />
 
-                          <span>Home</span>
+                          <span>Home Page</span>
                         </Link>
                       </li>
 
@@ -97,7 +97,7 @@
 
           <ul class="menu hidden items-center gap-1 sm:flex">
             <li>
-              <Link to="/"> Home </Link>
+              <Link to="/"> Home Page </Link>
             </li>
 
             <li>
