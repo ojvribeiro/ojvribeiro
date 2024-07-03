@@ -103,10 +103,13 @@
       animation-iteration-count: infinite;
       animation-duration: $time;
       animation-timing-function: linear;
+      transition: 0.2s cubic-bezier(0.52, 0, 0.38, 2.12);
 
       &:hover {
+        scale: 1.3;
+
         .orbit-item {
-          scale: 0.95;
+          scale: 0.7;
           opacity: 0.8;
         }
       }
