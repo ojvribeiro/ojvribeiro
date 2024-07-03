@@ -1,6 +1,4 @@
 {
-  "installCommand": "bun install",
-  "buildCommand": "bun run prod",
   "outputDirectory": "_dist",
   "framework": null,
   "rewrites": [
