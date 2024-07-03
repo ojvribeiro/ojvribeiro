@@ -80,7 +80,7 @@ export default defineVulmixConfig({
       {
         rel: 'apple-touch-icon',
         sizes: '192x192',
-        href: 'https://ojvribeiro.mehttps://ojvribeiro.me/assets/icons/favicon/apple-touch-icon.png',
+        href: 'https://ojvribeiro.me/assets/icons/favicon/apple-touch-icon.png',
       },
 
       {
