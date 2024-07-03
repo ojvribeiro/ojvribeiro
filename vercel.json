@@ -1,6 +1,6 @@
 {
-  "installCommand": "yarn install",
-  "buildCommand": "yarn prod",
+  "installCommand": "bun install",
+  "buildCommand": "bun run prod",
   "outputDirectory": "_dist",
   "framework": null,
   "rewrites": [
