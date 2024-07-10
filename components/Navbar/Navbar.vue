@@ -26,7 +26,7 @@
 
               <Transition name="fade">
                 <div
-                  class="fixed h-screen w-screen inset-0 z-40 bg-black/60"
+                  class="fixed inset-0 z-40 h-screen w-screen bg-black/60"
                   v-if="menu.drawer.isOpen"
                   @click="menu.drawer.isOpen = false"
                 />
