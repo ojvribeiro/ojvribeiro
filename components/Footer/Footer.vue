@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between py-8">
         <div>
           <img
-            src="@/assets/img/victor-ribeiro-logo-white.svg"
+            src="/img/victor-ribeiro-logo-white.svg"
             alt="Logo"
             class="h-6"
           />

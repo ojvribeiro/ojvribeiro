@@ -46,7 +46,7 @@ export default defineVulmixConfig({
       {
         property: 'og:image',
         content:
-          'https://ojvribeiro.me/assets/img/seo/ojvribeiro-1200x630.png?v=ddc6bae',
+          '/img/seo/ojvribeiro-1200x630.png?v=ddc6bae',
       },
 
       {
@@ -72,7 +72,7 @@ export default defineVulmixConfig({
       {
         property: 'twitter:image',
         content:
-          'https://ojvribeiro.me/assets/img/seo/ojvribeiro-1200x630.png?v=ddc6bae',
+          '/img/seo/ojvribeiro-1200x630.png?v=ddc6bae',
       },
     ],
 
@@ -80,26 +80,26 @@ export default defineVulmixConfig({
       {
         rel: 'apple-touch-icon',
         sizes: '192x192',
-        href: 'https://ojvribeiro.me/assets/icons/favicon/apple-touch-icon.png',
+        href: '/img/favicon/apple-touch-icon.png',
       },
 
       {
         rel: 'icon',
         sizes: '32x32',
         type: 'image/png',
-        href: 'https://ojvribeiro.me/assets/icons/favicon/favicon-32x32.png',
+        href: '/img/favicon/favicon-32x32.png',
       },
 
       {
         rel: 'icon',
         sizes: '16x16',
         type: 'image/png',
-        href: 'https://ojvribeiro.me/assets/icons/favicon/favicon-16x16.png',
+        href: '/img/favicon/favicon-16x16.png',
       },
 
       {
         rel: 'manifest',
-        href: 'https://ojvribeiro.me/assets/icons/favicon/site.webmanifest',
+        href: '/img/favicon/site.webmanifest',
       },
     ],
   },

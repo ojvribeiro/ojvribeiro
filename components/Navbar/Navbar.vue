@@ -88,7 +88,7 @@
 
             <Link to="/" class="text-white hover:text-white/70">
               <img
-                src="@/assets/img/victor-ribeiro-logo-white.svg"
+                src="/img/victor-ribeiro-logo-white.svg"
                 alt="Logo"
                 class="h-6"
               />

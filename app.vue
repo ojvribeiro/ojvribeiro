@@ -12,7 +12,7 @@
     <Navbar />
 
     <div>
-      <App />
+      <Page />
     </div>
   </div>
 </template>
