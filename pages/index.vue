@@ -153,7 +153,7 @@
     @apply mt-8 flex gap-5 text-4xl;
 
     a {
-      @apply text-blue-300 transition duration-200 hover:scale-110 hover:text-white;
+      @apply text-blue-300 transition duration-200 hover:text-white;
     }
   }
 
