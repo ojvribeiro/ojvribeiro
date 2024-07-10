@@ -24,13 +24,13 @@
             <div
               class="col-span-2 flex items-center md:justify-center lg:col-span-1"
             >
-              <div class="relative px-4 sm:px-8 md:px-16">
+              <div class="group relative px-4 sm:px-8 md:px-16">
                 <Orbit class="hidden md:block" />
 
                 <Transition name="fade-zoom">
                   <div
                     v-if="!isLoading"
-                    class="ping relative aspect-square w-[100px] overflow-hidden rounded-full transition-transform lg:w-[200px] xl:w-[300px]"
+                    class="easing ping relative aspect-square w-[100px] overflow-hidden rounded-full transition-transform delay-100 group-hover:scale-105 lg:w-[200px] xl:w-[300px]"
                   >
                     <img
                       :src="image"
@@ -155,6 +155,10 @@
     a {
       @apply text-blue-300 transition duration-200 hover:text-white;
     }
+  }
+
+  .easing {
+    transition-timing-function: cubic-bezier(0.52, 0, 0.38, 2.12);
   }
 
   .fade-zoom-enter-active {
