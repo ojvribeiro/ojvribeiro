@@ -27,7 +27,7 @@
               class="link"
               >Vulmix</a
             >
-            <Icon name="vulmix-mono" class="ml-[2px] text-2xl" />
+            <Icon name="vulmix-mono" class="ml-[2px] text-xl" />
           </p>
         </div>
       </div>
