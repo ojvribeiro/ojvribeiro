@@ -1,10 +1,7 @@
 <script setup lang="ts">
   import { useImage } from '@vueuse/core'
-  import { Endpoints } from '@octokit/types'
 
-  type User = Endpoints['GET /users/{username}']['response']['data']
-
-  const image = 'https://github.com/ojvribeiro.png'
+  const image = '/img/avatar/pic.jpg'
 
   const { isLoading } = useImage({ src: image })
 
