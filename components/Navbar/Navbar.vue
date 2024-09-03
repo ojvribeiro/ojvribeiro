@@ -92,6 +92,8 @@
                 src="/img/victor-ribeiro-logo-white.svg"
                 alt="Logo"
                 class="h-6"
+                width="49"
+                height="24"
               />
             </Link>
           </div>
