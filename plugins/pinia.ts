@@ -2,6 +2,6 @@ import { createPinia } from 'pinia'
 
 const pinia = createPinia()
 
-export default defineVulmixPlugin(app => {
+export default definePlugin(app => {
   app.use(pinia)
 })
