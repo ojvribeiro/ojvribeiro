@@ -102,11 +102,6 @@ export default defineVulmixConfig({
         rel: 'manifest',
         href: '/img/favicon/site.webmanifest',
       },
-
-      {
-        rel: 'preload',
-        href: '/img/avatar/pic.jpg',
-      },
     ],
   },
   transition: {
