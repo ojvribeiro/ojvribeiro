@@ -60,7 +60,20 @@
                 </div>
 
                 <div class="space-y-4 text-lg text-white/50">
-                  <p>I'm a creative brazilian front-end developer.</p>
+                  <p>
+                    I'm a creative brazilian front-end developer. <br />
+                    You can
+                    <Link to="/projects" class="link">see my work</Link>
+                    or
+                    <a
+                      href="https://github.com/ojvribeiro/ojvribeiro"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      class="link"
+                      >get in touch</a
+                    >
+                    with me.
+                  </p>
 
                   <p>
                     This website is
