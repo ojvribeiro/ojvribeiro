@@ -77,41 +77,6 @@
                   </p>
                 </div>
 
-                <div>
-                  <ul class="text-white/50">
-                    <li>
-                      <div class="flex items-center gap-2">
-                        <Icon icon="bx:chevron-right" />
-                        JS
-                      </div>
-                    </li>
-                    <li>
-                      <div class="flex items-center gap-2">
-                        <Icon icon="bx:chevron-right" />
-                        CSS / Sass
-                      </div>
-                    </li>
-                    <li>
-                      <div class="flex items-center gap-2">
-                        <Icon icon="bx:chevron-right" />
-                        Vue / Nuxt
-                      </div>
-                    </li>
-                    <li>
-                      <div class="flex items-center gap-2">
-                        <Icon icon="bx:chevron-right" />
-                        Bootstrap / Tailwind / Materialize
-                      </div>
-                    </li>
-                    <li>
-                      <div class="flex items-center gap-2">
-                        <Icon icon="bx:chevron-right" />
-                        Webpack (Laravel Mix) / Vite
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
                 <div class="social-icons">
                   <a
                     href="https://github.com/ojvribeiro"
