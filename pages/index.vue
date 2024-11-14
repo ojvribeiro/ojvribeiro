@@ -57,14 +57,10 @@
                   </h1>
                 </div>
 
-                <div>
-                  <p class="text-lg text-white">
-                    I'm a creative brazilian front-end developer.
-                  </p>
+                <div class="space-y-4 text-lg text-white/50">
+                  <p>I'm a creative brazilian front-end developer.</p>
 
-                  <p></p>
-
-                  <p class="text-base text-white/50">
+                  <p>
                     This website is
                     <a
                       href="https://github.com/ojvribeiro/ojvribeiro"
