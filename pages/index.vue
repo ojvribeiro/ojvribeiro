@@ -52,7 +52,9 @@
                     Hi! 👋 My name is
                   </p>
 
-                  <h1 class="text-4xl text-white md:text-6xl">
+                  <h1
+                    class="font-reem text-4xl font-bold text-white md:text-7xl"
+                  >
                     Victor Ribeiro
                   </h1>
                 </div>

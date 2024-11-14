@@ -36,14 +36,14 @@
         <Container>
           <div class="relative py-12 text-white">
             <div class="space-y-6">
-              <h1 class="font-poppins text-4xl font-bold">Uses</h1>
+              <h1 class="font-gabarito text-4xl font-bold">Uses</h1>
 
               <p>
                 Here are some of the tools, services and hardware that I use on
                 a daily basis.
               </p>
 
-              <h2 class="font-poppins text-2xl font-bold">Editor</h2>
+              <h2 class="font-gabarito text-2xl font-bold">Editor</h2>
 
               <div>
                 <ul class="flex flex-col gap-4">
@@ -57,7 +57,7 @@
                 </ul>
               </div>
 
-              <h2 class="font-poppins text-2xl font-bold">Terminal</h2>
+              <h2 class="font-gabarito text-2xl font-bold">Terminal</h2>
 
               <div>
                 <ul class="flex flex-col gap-4">
@@ -71,7 +71,7 @@
                 </ul>
               </div>
 
-              <h2 class="font-poppins text-2xl font-bold">Hardware</h2>
+              <h2 class="font-gabarito text-2xl font-bold">Hardware</h2>
 
               <div>
                 <ul class="flex flex-col gap-4">

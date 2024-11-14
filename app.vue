@@ -25,7 +25,7 @@
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inconsolata&family=Poppins:wght@400;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Gabarito:wght@400..900&family=Reem+Kufi:wght@700&display=swap');
 
   @tailwind base;
   @tailwind components;
@@ -33,7 +33,7 @@
 
   html,
   body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Gabarito', sans-serif;
   }
 
   body {
@@ -77,9 +77,7 @@
   h4,
   h5,
   h6 {
-    @apply font-black;
-
-    font-family: 'Poppins', sans-serif;
+    @apply font-reem font-black;
   }
 
   .fade-enter-active,

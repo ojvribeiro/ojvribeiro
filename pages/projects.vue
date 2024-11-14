@@ -72,7 +72,7 @@
         <Container>
           <div class="relative py-12 text-white">
             <div class="space-y-6">
-              <h1 class="font-poppins text-4xl font-bold">Projects</h1>
+              <h1 class="font-gabarito text-4xl font-bold">Projects</h1>
 
               <p>Here are some of the projects that I've worked on.</p>
 

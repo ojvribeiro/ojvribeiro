@@ -22,8 +22,8 @@ module.exports = {
 
       fontFamily: {
         incosolata: ['Inconsolata', 'monospace'],
-        'dm-sans': ['DM Sans', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        reem: ['Reem Kufi', 'sans-serif'],
+        gabarito: ['Gabarito', 'sans-serif'],
       },
     },
   },
