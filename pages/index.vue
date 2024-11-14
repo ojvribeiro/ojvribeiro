@@ -16,10 +16,10 @@
       <header>
         <Container class="mx-auto h-full">
           <div
-            class="grid h-full pt-10 md:grid-cols-2 md:items-center md:gap-8 lg:pt-0"
+            class="grid h-full pt-10 md:grid-cols-2 md:items-center md:gap-6 lg:pt-0"
           >
             <div
-              class="col-span-2 flex items-center justify-start lg:col-span-1 lg:justify-end"
+              class="col-span-2 flex items-center justify-start lg:col-span-1 lg:justify-center"
             >
               <div class="group relative px-4 sm:px-8 md:px-16">
                 <Orbit class="hidden lg:block" />
@@ -46,7 +46,7 @@
             </div>
 
             <div class="col-span-2 flex md:items-center lg:col-span-1">
-              <div class="space-y-6 px-4 sm:px-8 md:px-16">
+              <div class="space-y-6 pr-4 sm:pr-8 md:pr-16">
                 <div>
                   <p class="font-sans font-semibold text-white/50">
                     Hi! 👋 My name is
