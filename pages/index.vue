@@ -30,7 +30,7 @@
                     class="easing mask relative aspect-square w-[140px] select-none transition-transform delay-100 duration-300 group-hover:scale-105 md:w-[250px] xl:w-[300px]"
                   >
                     <div
-                      class="absolute left-0 top-0 h-full w-full bg-brand-blue-900"
+                      class="absolute left-0 top-0 h-full w-full bg-[#444391]"
                     />
 
                     <img
