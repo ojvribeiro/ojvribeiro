@@ -19,15 +19,15 @@
             class="grid h-full pt-10 md:grid-cols-2 md:items-center md:gap-8 lg:pt-0"
           >
             <div
-              class="col-span-2 flex items-center md:justify-end lg:col-span-1"
+              class="col-span-2 flex items-center justify-start lg:col-span-1 lg:justify-end"
             >
               <div class="group relative px-4 sm:px-8 md:px-16">
-                <Orbit class="hidden md:block" />
+                <Orbit class="hidden lg:block" />
 
                 <Transition name="fade-zoom">
                   <div
                     v-if="!isLoading"
-                    class="easing mask relative aspect-square w-[140px] select-none transition-transform delay-100 duration-300 group-hover:scale-105 lg:w-[250px] xl:w-[300px]"
+                    class="easing mask relative aspect-square w-[140px] select-none transition-transform delay-100 duration-300 group-hover:scale-105 md:w-[250px] xl:w-[300px]"
                   >
                     <div
                       class="absolute left-0 top-0 h-full w-full bg-brand-blue-900"
