@@ -46,7 +46,7 @@
   }
 
   .gradient {
-    @apply bg-gradient-to-r from-brand-purple to-brand-green;
+    @apply bg-gradient-to-r from-brand-blue-950 to-brand-blue-800;
   }
 
   ::-webkit-scrollbar {
