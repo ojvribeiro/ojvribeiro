@@ -138,12 +138,12 @@
 
           <li>
             <a
-              href="https://x.com/ojvribeiro"
-              title="Twitter/X"
+              href="https://bsky.app/profile/ojvribeiro.me"
+              title="Bluesky"
               target="_blank"
               rel="noopener nofollow noreferrer"
             >
-              <Icon icon="iconoir:twitter" />
+              <Icon icon="ri:bluesky-line" />
             </a>
           </li>
         </ul>
