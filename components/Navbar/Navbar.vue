@@ -89,9 +89,9 @@
 
             <Link to="/" class="text-white hover:text-white/70">
               <img
-                src="/img/victor-ribeiro-logo-white.svg"
+                src="/img/victor-ribeiro-logo-color.svg"
                 alt="Logo"
-                class="h-6"
+                class="h-8 w-auto"
                 width="49"
                 height="24"
               />
