@@ -13,7 +13,9 @@
 <template>
   <div>
     <Layout>
-      <header>
+      <header
+        class="bg-gradient-to-br from-brand-blue-800 via-brand-blue-950 to-brand-blue-950"
+      >
         <Container class="mx-auto h-full">
           <div
             class="grid h-full pt-10 md:grid-cols-2 md:items-center md:gap-6 lg:pt-0"
@@ -22,7 +24,7 @@
               class="col-span-2 flex items-center justify-start lg:col-span-1 lg:justify-center"
             >
               <div class="group relative px-4 sm:px-8 md:px-16">
-                <Orbit class="hidden lg:block" />
+                <Orbit class="hidden mix-blend-luminosity lg:block" />
 
                 <Transition name="fade-zoom">
                   <div

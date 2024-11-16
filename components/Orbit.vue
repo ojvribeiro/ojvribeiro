@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute left-1/2 top-1/2 z-[1] box-border aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full mix-blend-luminosity"
+    class="absolute left-1/2 top-1/2 z-[1] box-border aspect-square w-full -translate-x-1/2 -translate-y-1/2 rounded-full"
   >
     <div class="orbit-wrapper h-full w-full rounded-full">
       <div
@@ -97,6 +97,8 @@
   );
 
   .orbit {
+    mix-blend-mode: luminosity;
+
     &-wrapper {
       animation-name: orbit;
       animation-iteration-count: infinite;
@@ -117,7 +119,7 @@
         position: absolute;
         top: calc(50% - 20px);
         left: calc(50% - 20px);
-        background-color: rgba(#fff, 0%);
+        background-color: transparent;
         width: 40px;
         height: 40px;
         aspect-ratio: 1;
@@ -146,7 +148,7 @@
 
         &::after {
           content: '';
-          box-shadow: 0 0 0 1px rgba(#fff, 70%);
+          box-shadow: 0 0 0 1px rgba(#fff, 5%);
           position: absolute;
           top: 0;
           left: 0;
@@ -169,7 +171,7 @@
 
         &:hover {
           opacity: 1;
-          box-shadow: 0 0 0 5px rgba(#fff, 30%);
+          box-shadow: 0 0 0 5px rgba(#fff, 10%);
 
           &::after {
             opacity: 1;
