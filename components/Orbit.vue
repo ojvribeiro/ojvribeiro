@@ -5,8 +5,7 @@
     <div class="orbit-wrapper h-full w-full rounded-full">
       <div
         v-for="(lang, index) in langs"
-        class="orbit-item"
-        :class="['orbit-item-' + (index + 1)]"
+        :class="['orbit-item', `orbit-item-${index + 1}`]"
         :title="lang.name"
       >
         <div class="orbit-item-content">
@@ -178,13 +177,13 @@
           }
         }
       }
-    }
-  }
 
-  @each $i, $translation in $translations {
-    .orbit-item:nth-child(#{$i}) {
-      $translation: map-get($translations, $i);
-      transform: translate($translation...);
+      @each $i, $translation in $translations {
+        .orbit-item:nth-child(#{$i}) {
+          $translation: map-get($translations, $i);
+          transform: translate($translation...);
+        }
+      }
     }
   }
 
