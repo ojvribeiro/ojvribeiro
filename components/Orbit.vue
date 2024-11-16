@@ -17,12 +17,12 @@
 </template>
 
 <script setup lang="ts">
-  const langs = ref<
-    {
-      name: string
-      icon: string
-    }[]
-  >([
+  interface Tech {
+    name: string
+    icon: string
+  }
+
+  const langs = ref<Tech[]>([
     {
       name: 'JavaScript',
       icon: 'skill-icons:javascript',
