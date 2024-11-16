@@ -55,7 +55,7 @@
                   </p>
 
                   <h1
-                    class="font-reem text-4xl font-bold text-white md:text-7xl"
+                    class="font-reem text-4xl font-bold tracking-tighter text-white md:text-7xl"
                   >
                     Victor Ribeiro
                   </h1>
