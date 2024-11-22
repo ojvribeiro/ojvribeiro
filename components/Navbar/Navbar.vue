@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { useWindowScroll } from '@vueuse/core'
-  import { useMenu } from '~/stores/menu'
+  import { useMenu } from '@/stores/menu'
 
   const { y } = useWindowScroll()
 
