@@ -1,8 +1,11 @@
 <script setup lang="ts">
   import { useWindowScroll } from '@vueuse/core'
   import { useMenu } from '@/stores/menu'
+  import Switch from '@/components/ui/switch/Switch.vue'
+  import { useFireworksStore } from '@/stores/fireworks'
 
   const { y } = useWindowScroll()
+  const fireworksStore = useFireworksStore()
 
   const menu = useMenu()
 </script>
@@ -120,6 +123,7 @@
               title="GitHub"
               target="_blank"
               rel="noopener nofollow noreferrer"
+              class="grid place-items-center"
             >
               <Icon icon="iconoir:github-circle" />
             </a>
@@ -131,6 +135,7 @@
               title="LinkedIn"
               target="_blank"
               rel="noopener nofollow noreferrer"
+              class="grid place-items-center"
             >
               <Icon icon="iconoir:linkedin" />
             </a>
@@ -142,9 +147,24 @@
               title="Bluesky"
               target="_blank"
               rel="noopener nofollow noreferrer"
+              class="grid place-items-center"
             >
               <Icon icon="ri:bluesky-line" />
             </a>
+          </li>
+
+          <li v-if="fireworksStore.isNewYear">
+            <div class="flex items-center space-x-2">
+              <Switch
+                id="fireworks"
+                :checked="fireworksStore.enabled"
+                @update:checked="fireworksStore.toggle"
+              />
+
+              <label for="fireworks" class="cursor-pointer text-xs">
+                Fireworks
+              </label>
+            </div>
           </li>
         </ul>
       </div>
