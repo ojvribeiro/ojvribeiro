@@ -25,11 +25,8 @@
 </script>
 
 <style>
+  @import url('./assets/css/index.css');
   @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Gabarito:wght@400..900&family=Reem+Kufi:wght@700&display=swap');
-
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
 
   html,
   body {
