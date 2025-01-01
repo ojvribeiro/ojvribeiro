@@ -28,15 +28,8 @@
 <template>
   <div>
     <Layout>
-      <header
-        :class="[
-          'relative overflow-hidden',
-          isNewYear === false
-            ? 'bg-gradient-to-br from-brand-blue-800 via-brand-blue-950 to-brand-blue-950'
-            : '',
-        ]"
-      >
         <NewYear />
+      <header class="relative overflow-hidden">
 
         <Container class="mx-auto h-full">
           <div
