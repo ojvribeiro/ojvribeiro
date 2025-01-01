@@ -1,7 +1,22 @@
 <script setup lang="ts">
   import { useImage } from '@vueuse/core'
+  import NewYear from '@/components/NewYear.vue'
 
   const image = '/img/avatar/pic.jpg'
+
+  const isNewYear = ref(false)
+
+  const date = ref(new Date())
+
+  const now = ref(new Date(date.value).getTime())
+
+  onMounted(() => {
+    setInterval(() => {
+      if (new Date().getFullYear() === 2025) {
+        isNewYear.value = true
+      }
+    }, 1000)
+  })
 
   const { isLoading } = useImage({ src: image })
 
@@ -14,8 +29,15 @@
   <div>
     <Layout>
       <header
-        class="bg-gradient-to-br from-brand-blue-800 via-brand-blue-950 to-brand-blue-950"
+        :class="[
+          'relative overflow-hidden',
+          isNewYear === false
+            ? 'bg-gradient-to-br from-brand-blue-800 via-brand-blue-950 to-brand-blue-950'
+            : '',
+        ]"
       >
+        <NewYear />
+
         <Container class="mx-auto h-full">
           <div
             class="grid h-full pt-10 md:grid-cols-2 md:items-center md:gap-6 lg:pt-0"
