@@ -1,18 +1,16 @@
 <script setup lang="ts">
   import { useImage } from '@vueuse/core'
   import NewYear from '@/components/NewYear.vue'
+  import { useFireworksStore } from '@/stores/fireworks'
+
+  const fireworksStore = useFireworksStore()
 
   const image = '/img/avatar/pic.jpg'
 
-  const isNewYear = ref<boolean>(false)
-
-  onMounted(() => {
-    setInterval(() => {
-      if (new Date().getFullYear() === 2025) {
-        isNewYear.value = true
-      }
-    }, 1000)
+  const isNewYear = computed<boolean>(() => {
+    return new Date().getMonth() === 0 && new Date().getDate() === 1
   })
+
 
   const { isLoading } = useImage({ src: image })
 
@@ -26,7 +24,7 @@
     <Layout>
       <header class="relative overflow-hidden">
         <Transition name="fade">
-          <NewYear v-if="isNewYear" />
+          <NewYear v-if="isNewYear && fireworksStore.enabled" />
         </Transition>
 
         <Container class="mx-auto h-full">
