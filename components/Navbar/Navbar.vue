@@ -1,7 +1,6 @@
 <script setup lang="ts">
   import { useWindowScroll } from '@vueuse/core'
   import { useMenu } from '@/stores/menu'
-  import Switch from '@/components/ui/switch/Switch.vue'
   import { useFireworksStore } from '@/stores/fireworks'
 
   const { y } = useWindowScroll()
