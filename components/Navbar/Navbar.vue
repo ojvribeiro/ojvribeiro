@@ -153,7 +153,7 @@
             </a>
           </li>
 
-          <li>
+          <li v-if="fireworksStore.isNewYear">
             <div class="flex items-center space-x-2">
               <Switch
                 id="fireworks"
@@ -161,7 +161,9 @@
                 @update:checked="fireworksStore.toggle"
               />
 
-              <label for="fireworks" class="text-xs cursor-pointer">Fireworks</label>
+              <label for="fireworks" class="cursor-pointer text-xs">
+                Fireworks
+              </label>
             </div>
           </li>
         </ul>

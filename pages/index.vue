@@ -7,11 +7,6 @@
 
   const image = '/img/avatar/pic.jpg'
 
-  const isNewYear = computed<boolean>(() => {
-    return new Date().getMonth() === 0 && new Date().getDate() === 1
-  })
-
-
   const { isLoading } = useImage({ src: image })
 
   useHead({
@@ -24,7 +19,7 @@
     <Layout>
       <header class="relative overflow-hidden">
         <Transition name="fade">
-          <NewYear v-if="isNewYear && fireworksStore.enabled" />
+          <NewYear v-if="fireworksStore.isNewYear && fireworksStore.enabled" />
         </Transition>
 
         <Container class="mx-auto h-full">
